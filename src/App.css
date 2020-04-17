@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body{
+    background: #dfd5f6;
+}
+.App{
+    background: #3f3160;
+    min-height: 60vh;
+    width: 60vw;
+    margin: 40px auto;
+    padding-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #CA9C18;
+    cursor: pointer;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:hover{
+    background: #B38C56;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*todoform*/
+
+.todo-form input {
+    background:rgb(27, 112, 137 );
+    border: 0;
+    width: 30vw;
+    height: 50px;
+    padding: 0 20px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.todo-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.todo-form input:focus,
+.todo-form button{
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form button{
+    width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*todoitem*/
+
+.todo-item {
+    background: #ffffff;
+    width: 45vw;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.todo-item p{
+    margin: 0;
+}
+
+.todo_element span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.success-thr{
+    color: #198014;
+    text-decoration: line-through ;
+    background: #bf07ac ;
+    width: 45vw;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.success-thr p{
+    margin: 0;
+}
+
+.success-thr .trash{
+    color: red;
+}
+
+/*
+.todo-item p input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+}
+.todo-item p input:focus{
+    outline: none;
+}*/
+
+/**/
+.todos-status{
+    text-align: center;
+    color: #ffffff;
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+.todos-status div{
+    margin: 20px auto;
 }
